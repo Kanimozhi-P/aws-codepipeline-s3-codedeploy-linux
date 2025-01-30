@@ -1,36 +1,65 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Sample Deployment</title>
+  <title>AWS DEPLOYMENT</title>
   <style>
     body {
-      color: #ffffff;
-      background-color: #ff33b5 ;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
+      text-align: center;
+      background-color: rgb(119, 55, 55);
+      font-family: sans-serif; /* Added a default font */
+      margin: 0; /* Reset default margins */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh; /* Ensure full viewport height */
     }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
+
+    .container {
+      width: 80%; /* Adjust as needed */
+      max-width: 960px; /* Set a maximum width */
+      margin: 20px auto; /* Center the content */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
+
+    .image-prop {
+      background-image: url("aws-codedeploy-flow.png");
+      background-size: contain; /* or cover, depending on your preference */
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%; /* Occupy full width of the container */
+      height: 0; /* Maintain aspect ratio */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+      position: relative; /* For positioning the overlay if needed */
+      margin-top: 20px;
+    }
+
+    h1, h2, p {
+      color: black;
+      text-align: center;
+      margin-bottom: 10px; /* Add spacing between text elements */
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div align="center">
+  <div class="container">
     <h1>Congratulations!</h1>
-    <h2>Hi This is Kanimozhi F018431 and new update You have successfully created a pipeline that retrieved this source application from an Amazon S3 bucket and deployed it 
-	to three Amazon EC2 instances using AWS CodeDeploy.</h2>
-    <p>For next steps, read the AWS CodePipeline Documentation.</p>
+    <h2>Hi Kanimozhi(F018431) You have successfully created a pipeline that retrieved this source application from an Amazon S3 bucket and deployed it to three Amazon EC2 instances using AWS CodeDeploy.</h2>
+    <p>For next steps, read the <a href="YOUR_AWS_DOCS_LINK_HERE">AWS CodePipeline Documentation</a>.</p> 
+    <div class="image-prop"></div>
   </div>
 </body>
 </html>
-
