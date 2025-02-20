@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Your Success!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <title>Deployment Success 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,131 +13,94 @@
     }
 
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(45deg, #ff6f61, #ffb74d);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a6d);
       color: #fff;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      position: relative;
-      background-size: 400% 400%;
-      animation: gradientShift 10s ease infinite;
-    }
-
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
     }
 
     .container {
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 50px 80px;
-      border-radius: 20px;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(15px);
-      animation: slideUp 1s ease-out;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
     }
 
     h1 {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       font-weight: 700;
-      color: #ffeb3b;
+      color: #ffcc00;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 15px rgba(255, 235, 59, 0.8);
-      animation: glowEffect 1.8s infinite alternate;
+      text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 400;
-      color: #e0f7fa;
-      margin-bottom: 25px;
-      letter-spacing: 1.5px;
+      margin: 20px 0;
+      color: #fff;
     }
 
     p {
       font-size: 1.2rem;
-      color: #cfd8dc;
-      line-height: 1.7;
+      color: #d1d1e0;
+      margin-top: 15px;
+    }
+
+    button {
       margin-top: 20px;
-    }
-
-    .cta-btn {
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #ff4081;
-      color: #fff;
+      padding: 10px 20px;
       font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: #ff4081;
       border: none;
-      border-radius: 30px;
+      border-radius: 10px;
       cursor: pointer;
-      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.6);
-      transition: all 0.3s ease-in-out;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 64, 129, 0.8);
     }
 
-    .cta-btn:hover {
-      background-color: #f50057;
-      transform: scale(1.1);
+    button:hover {
+      background: #ff0055;
+      box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
     }
 
-    @keyframes glowEffect {
+    @keyframes fadeIn {
       0% {
-        text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ffeb3b, 0 0 45px #ffeb3b;
-      }
-      100% {
-        text-shadow: 0 0 30px #ffeb3b, 0 0 60px #ffeb3b, 0 0 90px #ffeb3b;
-      }
-    }
-
-    @keyframes slideUp {
-      0% {
-        transform: translateY(50px);
+        transform: scale(0.8);
         opacity: 0;
       }
       100% {
-        transform: translateY(0);
+        transform: scale(1);
         opacity: 1;
-      }
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 1.8rem;
-      }
-
-      .container {
-        padding: 40px 60px;
-      }
-
-      .cta-btn {
-        padding: 12px 24px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 Ready for Success!</h1>
-    <h2>Your pipeline is now live!</h2>
-    <p>All systems are up and running, and you're on your way to greatness.</p>
-    <p>Kanimozhi-F018431</p>
-    <button class="cta-btn">Take Action Now</button>
-  </div>
+
+<div class="container">
+    <h1>🎉 Success!</h1>
+    <h2>Kanimozhi, your pipeline is live and operational! 🚀</h2>
+    <p>Great job! Everything is set up and running seamlessly. Keep building awesome things!</p>
+    
+    <!-- Audio Player -->
+    <audio id="successAudio">
+      <source src="ttsMP3.com_VoiceText_2025-2-20_16-49-14.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Play Button -->
+    <button onclick="document.getElementById('successAudio').play()">🔊 Play Audio</button>
+</div>
+
 </body>
 </html>
